@@ -1,0 +1,267 @@
+/* 
+light red shade = #FC494C
+dark grey = #A9A9A9
+light blue = #CAEBF2
+light grey = #EFEFEF
+dark brown = #443742
+dull red = #D75C4E
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #EFEFEF;
+    font-family: 'Catamaran', sans-serif;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: right;
+    position: sticky;
+    top: 0;
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+}
+
+nav ol li {
+    margin: 0 20px;
+    counter-increment: item 1;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #443742;
+    font-size: 1.75em;
+    padding: 10px;
+    font-weight: 100;
+}
+
+ol li a::before {
+    content: "0" counter(item) ".";
+    color: #FC494C;
+    margin-right: 5px;
+}
+
+ol li a:hover {
+    color: #FC494C;
+}
+
+main {
+    padding: 0 100px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.object {
+    background-color: #DADADA;
+    width: 450px;
+    height: 300px;
+    box-shadow: 2px 2px 4px  rgb(107, 107, 107);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.object p {
+    font-family: monospace;
+    font-size: 1.25rem;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title h1,h2 {
+    padding: 5px;
+}
+
+.home-title h3 {
+    font-weight: 100;
+    margin-top: 25px;
+    padding: 10px;
+    color: #443742;
+    font-size: 2rem;
+}
+
+.home-title h1 {
+    font-weight: 700;
+    font-size: 7rem;
+    color: #443742;
+}
+
+.home-title h2 {
+    font-weight: 300;
+    color: #A9A9A9;
+    font-size: 2rem;
+}
+
+.connect-button {
+    background-color: #CAEBF2;
+    margin: 50px;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 16px;
+    font-size: 2rem;
+    color: #443742;
+    cursor: pointer;
+    border:1px solid #D75C4E;
+    box-shadow: 2px 2px 3px grey;
+    display: block;
+    margin: 50px auto;
+}
+
+.connect-button:hover {
+    color: rgb(163, 163, 163);
+}
+
+.connect-button:active {
+    transform: translateY(2px);
+}
+
+.scroll-down {
+    padding-bottom: 6rem;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse {
+    width: 2.5rem;
+    height: 5rem;
+    border: 2px solid #D75C4E;
+    border-radius: 2rem;
+    margin-bottom: .5rem;
+    display:flex;
+}
+
+.mouse span {
+    width: 1rem;
+    height: 1rem;
+    background-color: #D75C4E;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    animation: move-wheel 1s linear infinite;
+}
+
+.arrow span {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-right-color: #D75C4E;
+    border-bottom-color: #D75C4E;
+    transform: rotate(45deg);
+    animation: arrow-down .5s alternate infinite;
+}
+
+
+/* About section */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.about-section h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.about-section h2::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: #FC494C
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    margin: 50px;
+}
+
+.about-img {
+    background-image: url('images/profile.jpeg');
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.about-p {
+    width: 400px;
+    font-size: 2rem;
+}
+
+/* Skills section */
+
+/* .skills-section {
+
+} */
+
+@keyframes move-wheel {
+    0%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
