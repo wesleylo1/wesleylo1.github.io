@@ -6,15 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wesley's Portfolio</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-    <h1>Home Page</h1>
+    <header>
+        <nav>
+             <ol>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+
+     <!-- top of the page -->
+        <section class="hero">
+            <div class="object">
+                <p><span style="color: white">1.</span>&ensp;&ensp;<span style="color: #326A91">const</span> <span style="color: #16799D">person</span> <span class="white"><span style="color:white">= {</span></span></p>
+    
+                <p><span style="color:white">2.</span>&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color:#7AC2E1">firstName</span> <span style="color:white">=</span> <span style="color:#D38B71">"Wesley"</span><span style="color:white">,</span></p>
+    
+                <p><span style="color:white">3.</span>&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color:#7AC2E1">lastName </span><span style="color:white">=</span> <span style="color:#D38B71">"Lo"</span><span style="color:white">,</span></p>
+    
+                <p><span style="color:white">4.</span>&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color:#7AC2E1">gender</span> <span style="color:white">= [</span><span style="color:#D38B71">"He"</span><span style="color:white">,</span><span style="color:#D38B71">"Him"</span><span style="color:white">,</span><span style="color:#D38B71">"His"</span><span style="color:white">] ,</span></p>
+    
+                <p><span style="color:white">5.</span>&ensp;&ensp;&ensp;&ensp;&ensp;<span style="color:#7AC2E1">attribute</span> <span style="color:white">= [</span><span style="color:#D38B71">"Dev"</span><span style="color:white">,</span><span style="color:#D38B71">"Student"</span><span style="color:white">,</span><span style="color:#D38B71">"Passionate"</span><span style="color:white">]</span></p>
+    
+                <p><span style="color:white">6.&ensp;&ensp;}</span></p>
+            </div>
+    
+            <div class="home-title">
+                <h3>Hello there &#128075;, my name is</h3>
+                <h1>Wesley Lo</h1>
+                <h2>I'm a web developer in the DFW metroplex</h2>
+            </div>
+    
+            <button class="connect-button">Let's Connect!</button>
+    
+            <a href="#about" class="scroll-down">
+                <div class="mouse">
+                    <span></span>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                </div>
+            </a>
+        </section>
+<!-- About portion of portfolio -->
+        <section id="about" class="about-section">
+            <h2 class="about-title">About Me</h2>
+            <div class="about-info">
+                <div class="about-img"></div>
+                <div class="about-p">
+                    <p>
+                        Hello! My name is Wesley, and I enjoy all things web related. I recently completed the the full stack program from Devmountain in Dallas, TX. During my time there, I have learned how to use different technologies, applying the knowledge in my capstone project.
+                    </p> 
+                    <br>
+                    <p>
+                        My interest for web development began during the time when Myspace and Xanga were dominating the social media platform. Finally getting that theme going on after trial and error was just another feeling.
+                    </p>
+                    <br>
+                    <p>
+                        Whenever I am not coding, you can find me working on my photography, laughing at silly memes, and spending time with the family. 
+                    </p>
+                </div>
+            </div>
+        </section>
+<!-- Skills portion of portfolio -->
+        <section id="skills" class="skills-section">
+
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
