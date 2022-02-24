@@ -188,9 +188,8 @@ section {
     margin-top: 100px;
     height: 100vh; 
 }
-/* About section */
 
-.about-section h2 {
+section h2 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -198,6 +197,7 @@ section {
     font-weight: 100;
     font-size: 4rem;
 }
+/* About section */
 
 .about-section h2::before {
     counter-increment: section 1;
@@ -229,15 +229,6 @@ section {
 
 /* Skills section */
 
-.skills-section h2 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    color: #443742;
-    font-weight: 100;
-    font-size: 4rem;
-}
-
 .skills-section h2::before {
     counter-increment: section 2;
     content: "0" counter(section) ".";
@@ -258,6 +249,34 @@ section {
 .skills-icons img {
     height: 200px;
     width: auto;
+}
+
+/* Projects section */
+
+.projects-section h2::before {
+    counter-increment: section 3;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: #FC494C;
+}
+
+.project-section {
+    display: flex;
+    width: 100%;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+
+.project-image {
+    border: 1px solid red;
+    width: 50%;
 }
 
 @keyframes move-wheel {
