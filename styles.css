@@ -30,8 +30,6 @@ nav {
     height: 50px;
     align-items: center;
     justify-content: right;
-    position: sticky;
-    top: 0;
 }
 
 nav ol {
@@ -183,16 +181,14 @@ main {
     animation: arrow-down .5s alternate infinite;
 }
 
-
-/* About section */
-
-.about-section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-top: 100px;
+    height: 100vh; 
 }
+/* About section */
 
 .about-section h2 {
     display: flex;
@@ -233,9 +229,36 @@ main {
 
 /* Skills section */
 
-/* .skills-section {
+.skills-section h2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
 
-} */
+.skills-section h2::before {
+    counter-increment: section 2;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: #FC494C
+}
+
+.skills-icons {
+   display: grid;
+   grid-template-columns: 300px 300px 300px;
+   grid-template-rows: 1fr 1fr;
+   gap: 100px;
+   row-gap: 100px;
+   padding-left: 80px;
+   padding-top: 100px;
+}
+
+.skills-icons img {
+    height: 200px;
+    width: auto;
+}
 
 @keyframes move-wheel {
     0%{
