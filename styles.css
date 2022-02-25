@@ -30,6 +30,9 @@ nav {
     height: 50px;
     align-items: center;
     justify-content: right;
+    position: fixed;
+    top: 0;
+    background-color: #EFEFEF;
 }
 
 nav ol {
@@ -198,6 +201,16 @@ section > h2 {
 }
 /* About section */
 
+.about-section > h2 {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
 .about-section {
     margin-top: 100px;
 }
@@ -232,6 +245,16 @@ section > h2 {
 
 /* Skills section */
 
+.skills-section > h2 {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
 .skills-section h2::before {
     counter-increment: section 2;
     content: "0" counter(section) ".";
@@ -255,6 +278,16 @@ section > h2 {
 }
 
 /* Projects section */
+
+.projects-section > h2 {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
 
 .projects-section {
     margin-top: 100px;
@@ -358,6 +391,77 @@ section > h2 {
     font-size: 2em;
     letter-spacing: .5rem;
     padding-top: 50px;
+}
+
+/* Contact */
+
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-section h2 {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #443742;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+
+.contact-section h2::before {
+    counter-increment: section 4;
+    content: "0" counter(section) ".";
+    margin-right: 10px;
+    color: #FC494C;
+}
+
+.contact-section h3 {
+    font-weight: 700;
+    font-size: 10em;
+}
+
+.contact-section p {
+    font-size: 2em;
+}
+
+.contact-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+}
+
+#github {
+    height: 80px;
+    width: auto;
+}
+
+#linkedin {
+    height: 70px;
+    width: auto;
+}
+
+#instagram {
+    height: 60px;
+    width: auto;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    position: fixed;
+    bottom: 0;
+    font-size: 2em;
+    color: #A9A9A9;
 }
 
 @keyframes move-wheel {
