@@ -185,11 +185,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
     height: 100vh; 
 }
 
-section h2 {
+section > h2 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -198,6 +197,10 @@ section h2 {
     font-size: 4rem;
 }
 /* About section */
+
+.about-section {
+    margin-top: 100px;
+}
 
 .about-section h2::before {
     counter-increment: section 1;
@@ -253,6 +256,11 @@ section h2 {
 
 /* Projects section */
 
+.projects-section {
+    margin-top: 100px;
+    display: flex;
+}
+
 .projects-section h2::before {
     counter-increment: section 3;
     content: "0" counter(section) ".";
@@ -260,23 +268,96 @@ section h2 {
     color: #FC494C;
 }
 
-.project-section {
+.area {
     display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
     width: 100%;
 }
 
-.project-description {
+.description {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 300px;
-    border: 1px solid black;
+    padding: 50px;
+    height: 425px;
+    width: 644px;
+    border: 2px solid rgb(177, 177, 177);
+    border-radius: 10%;
+    box-shadow: 2px 2px 4px rgb(177, 177, 177);
+}
+
+.description h3 {
+    font-size: 3em;
+    color: #443742;
+    text-align: center;
+}
+
+.description p {
+    padding: 15px;
+    font-size: 2em;
+    color: #636363;
+    text-align: center;
+}
+
+.description > ul {
+    list-style: none;
+    display: flex;
     justify-content: space-evenly;
 }
 
+.btn-list {
+    display: flex;
+    align-items: center;
+}
+
+.demo-btn {
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 16px;
+    border: none;
+    color: #443742;
+    border:1px solid #D75C4E;
+    background-color: #CAEBF2;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.demo-btn:hover {
+    color: rgb(163, 163, 163);
+}
+
+.demo-btn:active {
+    transform: translateY(2px)
+}
+
+.description ul li a img {
+    height: 5rem;
+    width: auto;
+}
+
 .project-image {
-    border: 1px solid red;
-    width: 50%;
+    height: 425px;
+    width: 644px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8%;
+    border: 2px solid rgb(177, 177, 177);
+    box-shadow: 2px 2px 4px rgb(177, 177, 177);
+}
+
+.project-image img {    
+    height: 352px;
+    width: auto;
+}
+
+.projects-section > p {
+    color: #D75C4E;
+    font-weight: 100;
+    font-size: 2em;
+    letter-spacing: .5rem;
+    padding-top: 50px;
 }
 
 @keyframes move-wheel {
