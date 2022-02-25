@@ -138,6 +138,10 @@ main {
     margin: 50px auto;
 }
 
+.connect-link {
+    text-decoration: none;
+}
+
 .connect-button:hover {
     color: rgb(163, 163, 163);
 }
