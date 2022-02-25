@@ -1,3 +1,4 @@
+// back to top button
 myButton = document.querySelector('#myBtn')
 
 window.onscroll = function() {scrollFunction()};
@@ -15,15 +16,11 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-// footer = document.querySelector('.footer')
-// contact = document.querySelector('#contact')
 
-// window.onscroll = function() {displayFunction()}
+// scroll to view for heading
 
-// function displayFunction() {
-//     if (contact.scrollIntoView()) {
-//         footer.style.display = "block"
-//     } else {
-//         footer.style.display = "none"
-//     }
-// }
+
+// scroll to view for contact button
+
+
+// scroll to view for 
