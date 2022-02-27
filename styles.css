@@ -46,8 +46,16 @@ body {
     margin: 20px;
 }
 
+.icons-list li:hover {
+    transform: translateY(-5px)
+}
+
 .icons-list li a {
     text-decoration: none;
+}
+
+.icons-list li a svg:hover {
+    fill: #abe2ee;
 }
 
 #myBtn {
@@ -83,7 +91,7 @@ body {
 nav {
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 5rem;
     align-items: center;
     justify-content: right;
     position: fixed;
@@ -140,8 +148,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
-    margin-top: 50px;
+    padding: 1rem;
+    margin-top: 5rem;
 }
 
 .object p {
