@@ -24,6 +24,32 @@ body {
     font-family: 'Catamaran', sans-serif;
 }
 
+.icons-list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 10px;
+    top: 40%;
+    list-style: none;
+}
+
+.icons-list::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 500px;
+    background-color: #D75C4E;
+    margin: 0 auto;
+}
+
+.icons-list li {
+    margin: 20px;
+}
+
+.icons-list li a {
+    text-decoration: none;
+}
+
 #myBtn {
     display: none;
     position: fixed;
@@ -386,7 +412,7 @@ section > h2 {
     border: none;
     color: #443742;
     border:1px solid #D75C4E;
-    background-color: #CAEBF2;
+    background-color: #98e4f3;
     box-shadow: 1px 1px 3px grey;
 }
 
@@ -395,6 +421,10 @@ section > h2 {
 }
 
 .demo-btn:active {
+    transform: translateY(2px)
+}
+
+#git-weather:active {
     transform: translateY(2px)
 }
 
@@ -458,30 +488,6 @@ section > h2 {
 
 .contact-section p {
     font-size: 2em;
-}
-
-.contact-section ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40%;
-
-}
-
-#github {
-    height: 80px;
-    width: auto;
-}
-
-#linkedin {
-    height: 70px;
-    width: auto;
-}
-
-#instagram {
-    height: 60px;
-    width: auto;
 }
 
 /* footer */
