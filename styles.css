@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 10px;
+    left: 1em;
     top: 40%;
     list-style: none;
 }
@@ -36,8 +36,8 @@ body {
 .icons-list::after {
     content: "";
     display: block;
-    width: 3px;
-    height: 500px;
+    width: .5em;
+    height: 50em;
     background-color: #D75C4E;
     margin: 0 auto;
 }
