@@ -133,8 +133,8 @@ main {
 
 .object {
     background-color: #DADADA;
-    width: 450px;
-    height: 300px;
+    width: 4.5em;
+    height: 30em;
     box-shadow: 2px 2px 4px  rgb(107, 107, 107);
     border-radius: 10%;
     display: flex;
