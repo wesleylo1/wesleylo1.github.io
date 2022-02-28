@@ -141,8 +141,8 @@ main {
 
 .object {
     background-color: #DADADA;
-    width: 45rem;
-    height: 30rem;
+    max-width: 45rem;
+    min-height: 30rem;
     box-shadow: 2px 2px 4px  rgb(107, 107, 107);
     border-radius: 10%;
     display: flex;
@@ -259,6 +259,13 @@ section {
     height: 100vh; 
 }
 
+.about,.skills,.projets,.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 section > h2 {
     display: flex;
     width: 100%;
@@ -267,6 +274,7 @@ section > h2 {
     font-weight: 100;
     font-size: 4rem;
 }
+
 /* About section */
 
 .about-section > h2 {
