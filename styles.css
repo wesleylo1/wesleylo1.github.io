@@ -37,13 +37,13 @@ body {
     content: "";
     display: block;
     width: .5em;
-    height: 50em;
+    height: 40rem;
     background-color: #D75C4E;
     margin: 0 auto;
 }
 
 .icons-list li {
-    margin: 20px;
+    margin: 2rem;
 }
 
 .icons-list li:hover {
@@ -61,17 +61,17 @@ body {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 10px;
-    width: 50px;
-    height: 50px;
-    right: 20px;
+    bottom: 1rem;
+    width: 5rem;
+    height: 5rem;
+    right: 2rem;
     z-index: 99;
     border: none;
     outline: none;
     background-color: #CAEBF2;
     color: white;
     cursor: pointer;
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 50%;
 }
 
@@ -81,9 +81,9 @@ body {
 
 .btn-arrow {
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 .3rem .3rem 0;
     display: inline-block;
-    padding: 3px;
+    padding: .3rem;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
@@ -106,7 +106,7 @@ nav ol {
 }
 
 nav ol li {
-    margin: 0 20px;
+    margin: 0 2rem;
     counter-increment: item 1;
 }
 
@@ -114,14 +114,14 @@ nav ol li a {
     text-decoration: none;
     color: #443742;
     font-size: 1.75em;
-    padding: 10px;
+    padding: 1rem;
     font-weight: 100;
 }
 
 ol li a::before {
     content: "0" counter(item) ".";
     color: #FC494C;
-    margin-right: 5px;
+    margin-right: .5rem;
 }
 
 ol li a:hover {
@@ -129,7 +129,7 @@ ol li a:hover {
 }
 
 main {
-    padding: 0 100px;
+    padding: 0 10rem;
 }
 
 .hero {
@@ -164,13 +164,13 @@ main {
 }
 
 .home-title h1,h2 {
-    padding: 5px;
+    padding: .5rem;
 }
 
 .home-title h3 {
     font-weight: 100;
-    margin-top: 25px;
-    padding: 10px;
+    margin-top: 2.5rem;
+    padding: 1rem;
     color: #443742;
     font-size: 2rem;
 }
@@ -189,17 +189,17 @@ main {
 
 .connect-button {
     background-color: #CAEBF2;
-    margin: 50px;
+    margin: 5rem;
     width: 20rem;
     height: 4rem;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     font-size: 2rem;
     color: #443742;
     cursor: pointer;
     border:1px solid #D75C4E;
     box-shadow: 2px 2px 3px grey;
     display: block;
-    margin: 50px auto;
+    margin: 5rem auto;
 }
 
 .connect-link {
@@ -270,7 +270,7 @@ section > h2 {
 /* About section */
 
 .about-section > h2 {
-    padding-top: 50px;
+    padding-top: 5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -286,7 +286,7 @@ section > h2 {
 .about-section h2::before {
     counter-increment: section 1;
     content: "0" counter(section) ".";
-    margin-right: 10px;
+    margin-right: 1rem;
     color: #FC494C
 }
 
@@ -295,26 +295,26 @@ section > h2 {
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    margin: 50px;
+    margin: 5rem;
 }
 
 .about-img {
     background-image: url('images/profile.jpeg');
     background-size: cover;
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 30rem;
     border-radius: 50%;
 }
 
 .about-p {
-    width: 400px;
+    width: 40rem;
     font-size: 2rem;
 }
 
 /* Skills section */
 
 .skills-section > h2 {
-    padding-top: 50px;
+    padding-top: 5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -326,29 +326,29 @@ section > h2 {
 .skills-section h2::before {
     counter-increment: section 2;
     content: "0" counter(section) ".";
-    margin-right: 10px;
+    margin-right: 1rem;
     color: #FC494C
 }
 
 .skills-icons {
    display: grid;
-   grid-template-columns: 300px 300px 300px;
+   grid-template-columns: 30rem 30rem 30rem;
    grid-template-rows: 1fr 1fr;
-   gap: 100px;
-   row-gap: 100px;
-   padding-left: 80px;
-   padding-top: 100px;
+   gap: 10rem;
+   row-gap: 10rem;
+   padding-left: 8rem;
+   padding-top: 10rem;
 }
 
 .skills-icons img {
-    height: 200px;
+    height: 20rem;
     width: auto;
 }
 
 /* Projects section */
 
 .projects-section > h2 {
-    padding-top: 50px;
+    padding-top: 5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -358,32 +358,32 @@ section > h2 {
 }
 
 .projects-section {
-    margin-top: 100px;
+    margin-top: 10rem;
     display: flex;
 }
 
 .projects-section h2::before {
     counter-increment: section 3;
     content: "0" counter(section) ".";
-    margin-right: 10px;
+    margin-right: 1rem;
     color: #FC494C;
 }
 
 .area {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
     width: 100%;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    height: 425px;
-    width: 644px;
-    border: 2px solid rgb(177, 177, 177);
+    padding: 5rem;
+    height: 42.5rem;
+    width: 64.4rem;
+    border: .2rem solid rgb(177, 177, 177);
     border-radius: 10%;
     box-shadow: 2px 2px 4px rgb(177, 177, 177);
 }
@@ -395,7 +395,7 @@ section > h2 {
 }
 
 .description p {
-    padding: 15px;
+    padding: 1.5rem;
     font-size: 2em;
     color: #636363;
     text-align: center;
@@ -416,7 +416,7 @@ section > h2 {
     cursor: pointer;
     width: 10rem;
     height: 3rem;
-    border-radius: 16px;
+    border-radius: 1.6rem;
     border: none;
     color: #443742;
     border:1px solid #D75C4E;
@@ -442,8 +442,8 @@ section > h2 {
 }
 
 .project-image {
-    height: 425px;
-    width: 644px;
+    height: 42.5rem;
+    width: 64.4rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ section > h2 {
 }
 
 .project-image img {    
-    height: 352px;
+    height: 35.2rem;
     width: auto;
 }
 
@@ -462,17 +462,17 @@ section > h2 {
     font-weight: 100;
     font-size: 2em;
     letter-spacing: .5rem;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 /* Contact */
 
 .contact-section {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .contact-section h2 {
-    padding-top: 50px;
+    padding-top: 5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -485,7 +485,7 @@ section > h2 {
 .contact-section h2::before {
     counter-increment: section 4;
     content: "0" counter(section) ".";
-    margin-right: 10px;
+    margin-right: 1rem;
     color: #FC494C;
 }
 
