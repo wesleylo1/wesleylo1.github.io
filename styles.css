@@ -102,7 +102,7 @@ nav {
 nav ol {
     display: flex;
     list-style: none;
-    margin-right: 25px;
+    margin-right: 2.5rem;
 }
 
 nav ol li {
@@ -288,7 +288,7 @@ section > h2 {
 }
 
 .about-section {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .about-section h2::before {
