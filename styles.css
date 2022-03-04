@@ -264,15 +264,6 @@ section {
   align-items: center;
 }
 
-.about,
-.skills,
-.projets,
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 section > h2 {
   display: flex;
   width: 100%;
@@ -310,8 +301,9 @@ section > h2 {
 }
 
 .about-img {
-  width: 15vw;
-  height: 15vw;
+  width: 20vw;
+  height: 20vw;
+  margin-top: 10rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -346,18 +338,10 @@ section > h2 {
 }
 
 .skills-icons {
-  display: grid;
-  grid-template-columns: 30rem 30rem 30rem;
-  grid-template-rows: 1fr 1fr;
-  gap: 10rem;
-  row-gap: 10rem;
-  padding-left: 8rem;
-  padding-top: 10rem;
-}
-
-.skills-icons img {
-  height: 20rem;
-  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 15rem auto;
 }
 
 /* Projects section */
@@ -517,6 +501,27 @@ section > h2 {
   margin-top: auto;
   font-size: 2em;
   color: #a9a9a9;
+}
+
+@media screen and (max-width: 950px) {
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 0;
+  }
+
+  .about-img {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 0;
+  }
+
+  .about-p {
+    font-size: 1.75rem;
+  }
 }
 
 @keyframes move-wheel {
