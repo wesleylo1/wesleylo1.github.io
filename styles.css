@@ -1,12 +1,3 @@
-/* 
-light red shade = #FC494C
-dark grey = #A9A9A9
-light blue = #CAEBF2
-light grey = #EFEFEF
-dark brown = #443742
-dull red = #D75C4E
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;600;700&display=swap");
 
 * {
@@ -306,6 +297,7 @@ section > h2 {
   margin-top: 10rem;
   border-radius: 50%;
   overflow: hidden;
+  z-index: -1;
 }
 
 .about-img img {
@@ -316,6 +308,7 @@ section > h2 {
 .about-p {
   width: 40rem;
   font-size: 2rem;
+  padding: 5px;
 }
 
 /* Skills section */
@@ -378,8 +371,8 @@ section > h2 {
 .description {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 5rem;
-  height: 46rem;
   width: 45%;
   border: 0.2rem solid rgb(177, 177, 177);
   border-radius: 10%;
@@ -390,6 +383,10 @@ section > h2 {
   font-size: 3em;
   color: #443742;
   text-align: center;
+}
+
+.description h3:hover {
+  color: #d75c4e;
 }
 
 .description p {
@@ -441,7 +438,6 @@ section > h2 {
 
 .project-image {
   min-height: 46rem;
-  /* max-width: 64.4rem; */
   width: 46%;
   display: flex;
   justify-content: center;
@@ -458,9 +454,24 @@ section > h2 {
 .projects-section > p {
   color: #d75c4e;
   font-weight: 100;
-  font-size: 2em;
+  font-size: 1.75em;
   letter-spacing: 0.5rem;
   padding-top: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .description {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .project-image {
+    display: none;
+  }
+
+  .project-image img {
+    display: none;
+  }
 }
 
 /* Contact */
@@ -517,10 +528,12 @@ section > h2 {
     width: 30vw;
     height: 30vw;
     margin-top: 0;
+    z-index: -1;
   }
 
   .about-p {
     font-size: 1.75rem;
+    width: 40rem;
   }
 }
 
