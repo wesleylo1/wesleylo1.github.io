@@ -49,11 +49,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     })
   })
 })
-
-const submitBtn = document.querySelector("#submitButton")
-
-submitBtn.addEventListener("submit", (e) => {
-  e.preventDefault()
-
-  console.log("hello")
-})
